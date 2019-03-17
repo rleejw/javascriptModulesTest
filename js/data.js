@@ -1,16 +1,22 @@
 let getMyData  = (function(){
-    console.log("data");
-    let data = {
-        'ny': 'knicks',
-        'nj': 'nets',
-        'la': 'kalers'
-    }
+    let uniformNumber = 23;
 
-    let getMyData = function(){
-        return data;
+    let uniformTaken = function(a){
+
+        if (a == null) {
+            a = uniformNumber; 
+        }
+
+        if (a === 23) {
+            return 'NO';
+        } else {
+            return 'YES';
+        }
     }
 
     return {
-        getMyData : getMyData
+        isAvailable : function(b) {
+            return uniformTaken(b);
+        } 
     }
 })();

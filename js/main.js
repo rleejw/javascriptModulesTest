@@ -1,4 +1,4 @@
 ;(function(gMyData){
-    console.log("main");
-    console.log(gMyData);
+    let isAvailable = gMyData.isAvailable(99);
+    console.log(isAvailable);
 })(getMyData);
